@@ -1,5 +1,5 @@
 # Dating App API - [Azure Deployment Live Demo](https://da-app-jc.azurewebsites.net) 
-Testing Credentials: 
+Demo Credentials: 
 - Username: 'lola'
 - Password: 'password'
 # Potential Employer Application Showcase 
