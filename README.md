@@ -24,7 +24,7 @@ the following app was built as a general showcase with the use of different desi
 
 # Implementation:
 
-This application is capable of administrating, filter and paginate User Entities. Manage, Upload, and Delete Photos from a File Repository service (Cloudinary). Implement a fully functional massaging system build from scratch, to mimic a live chat messaging system.
+This application is capable of administrating, filter and paginate User Entities. Manage, Upload, and Delete Photos from a File Repository service (Cloudinary). Implements a fully functional massaging system build from scratch, to mimic a live chat messaging system.
 
 
 ##### Entity Relationship model:
