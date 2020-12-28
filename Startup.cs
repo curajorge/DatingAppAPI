@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using DatingApp.Helpers;
 using AutoMapper;
+using Microsoft.Extensions.Hosting;
 
 namespace DatingApp
 {
@@ -35,12 +36,7 @@ namespace DatingApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
-                .AddJsonOptions(opt =>
-                {
-                    opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                });
+            // services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddCors();
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper();
@@ -65,7 +61,7 @@ namespace DatingApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Seed seeder)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Seed seeder)
         {
             if (env.IsDevelopment())
             {
@@ -81,7 +77,7 @@ namespace DatingApp
                         context.Response.AddApplicationError(error.Error.Message);
                         await context.Response.WriteAsync(error.Error.Message);
                     }
-     }
+                }
                     ));
                 //app.UseHsts();
             }
@@ -90,8 +86,12 @@ namespace DatingApp
 
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             //app.UseHttpsRedirection();
+            app.UseRouting();
             app.UseAuthentication();
-            app.UseMvc();
+
+            
+            
+
         }
     }
 }
