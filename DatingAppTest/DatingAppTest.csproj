@@ -27,10 +27,6 @@
       <ProjectReference Include="..\DatingAppAPI\DatingApp.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Reference Include="JetBrains.ReSharper.TestRunner.Adapters.XUnit, Version=1.2.7.21, Culture=neutral, PublicKeyToken=5c492ec4f3eccde3">
-        <HintPath>..\..\..\Program Files\JetBrains\JetBrains Rider 2020.3.1\lib\ReSharperHost\TestRunner\Adapters\XUnit\netstandard2.0\JetBrains.ReSharper.TestRunner.Adapters.XUnit.dll</HintPath>
-      </Reference>
-    </ItemGroup>
+    
 
 </Project>
