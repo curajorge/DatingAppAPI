@@ -79,7 +79,7 @@ namespace DatingApp.Controllers
                 }
             }
 
-            photoForCreationDto.Url = uploadResult.Uri.ToString();
+            photoForCreationDto.Url = uploadResult.Url.ToString();
             photoForCreationDto.PublicId = uploadResult.PublicId;
 
             var photo = _mapper.Map<Photo>(photoForCreationDto);
@@ -92,13 +92,9 @@ namespace DatingApp.Controllers
 
             userFromRepo.Photos.Add(photo);
 
-            if (await _repo.SaveAll()) {
-
-                var photoToReturn = _mapper.Map<PhotoForReturnDto>(photo);
-                return CreatedAtRoute("GetPhoto", new { id = photo.Id }, photoToReturn);
-            }
-
-            return BadRequest("Could not add photo");
+            if (!await _repo.SaveAll()) return BadRequest("Could not add photo");
+            var photoToReturn = _mapper.Map<PhotoForReturnDto>(photo);
+            return CreatedAtRoute("GetPhoto", new { id = photo.Id }, photoToReturn);
 
         }
 
