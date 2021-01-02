@@ -1,5 +1,7 @@
 # 01/2021 Update - .Net 5.0 - Unit Tests
-Solution Updated to .Net 5.0, new Unit Test project Created.
+ - Solution Updated to .Net 5.0,
+ - New Unit Test project Created.
+ - New GitHub Action Workflow to run Unit Tests
 
 
 ...Work in progress
