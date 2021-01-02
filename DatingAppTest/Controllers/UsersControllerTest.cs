@@ -12,7 +12,6 @@ using DatingApp.Dtos;
 using DatingApp.Helpers;
 using DatingApp.Model;
 using FluentAssertions;
-using JetBrains.ReSharper.TestRunner.Adapters.XUnit.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
