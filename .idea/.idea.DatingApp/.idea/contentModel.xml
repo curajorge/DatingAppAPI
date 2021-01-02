@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jorge.cura\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jorge.cura\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_DatingApp.48519215.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jorge.cura\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\jorge.cura\source\repos\DatingAppAPI" t="IncludeFlat">
+      <e p="DatingApp.sln" t="IncludeFlat" />
+      <e p="DatingAppAPI" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="AuthController.cs" t="Include" />
+          <e p="MessagesController.cs" t="Include" />
+          <e p="PhotosController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="AuthRepository.cs" t="Include" />
+          <e p="DataContext.cs" t="Include" />
+          <e p="DatingRepository.cs" t="Include" />
+          <e p="IAuthRepository.cs" t="Include" />
+          <e p="IDatingRepository.cs" t="Include" />
+          <e p="Seed.cs" t="Include" />
+          <e p="UserSeedData.json" t="Include" />
+        </e>
+        <e p="DatingApp.csproj" t="IncludeRecursive" />
+        <e p="Dtos" t="Include">
+          <e p="MessageForCreationDto.cs" t="Include" />
+          <e p="MessageToReturnDto.cs" t="Include" />
+          <e p="PhotoForCreationDto.cs" t="Include" />
+          <e p="PhotoForReturnDto.cs" t="Include" />
+          <e p="PhotosForDetailedDto.cs" t="Include" />
+          <e p="UserForDetailDto.cs" t="Include" />
+          <e p="UserForListDto.cs" t="Include" />
+          <e p="UserForLoginDto.cs" t="Include" />
+          <e p="UserForRegisterDto.cs" t="Include" />
+          <e p="UserForUpdateDto.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="AutoMapperProfile.cs" t="Include" />
+          <e p="CloudinarySettings.cs" t="Include" />
+          <e p="Extensions.cs" t="Include" />
+          <e p="LogUserActivity.cs" t="Include" />
+          <e p="MessageParams.cs" t="Include" />
+          <e p="PagedList.cs" t="Include" />
+          <e p="PaginationHeader.cs" t="Include" />
+          <e p="UserParams.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include" />
+        <e p="Model" t="Include">
+          <e p="Like.cs" t="Include" />
+          <e p="Message.cs" t="Include" />
+          <e p="Photo.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+          <e p="Value.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="DatingApp.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
