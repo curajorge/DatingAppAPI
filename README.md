@@ -1,3 +1,9 @@
+# 01/2021 Update - .Net 5.0 - Unit Tests
+Solution Updated to .Net 5.0, new Unit Test project Created.
+
+
+...Work in progress
+
 # Dating App API - [Azure Deployment Live Demo](https://da-app-jc.azurewebsites.net) 
 Demo Credentials: 
 - Username: 'lola'
